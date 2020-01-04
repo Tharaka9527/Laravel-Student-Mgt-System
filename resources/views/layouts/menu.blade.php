@@ -97,3 +97,7 @@
 
 
 
+<li class="{{ Request::is('semesters*') ? 'active' : '' }}">
+    <a href="{{ route('semesters.index') }}"><i class="fa fa-edit"></i><span>Semesters</span></a>
+</li>
+
