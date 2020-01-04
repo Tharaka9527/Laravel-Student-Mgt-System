@@ -33,7 +33,7 @@
                             data-classroom_description="{{$classroom->classroom_description}}"
                             data-created_at="{{$classroom->created_at}}" 
                             data-updated_at="{{$classroom->updated_at}}" 
-                            data-classroom_id="{{$classroom->day_id}}" 
+                            data-classroom_id="{{$classroom->classroom_id}}" 
                             class='btn btn-warning btn-xs'>
                            <i class="glyphicon glyphicon-eye-open"> Show</i></a>
 
