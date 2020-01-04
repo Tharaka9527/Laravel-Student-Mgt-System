@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+//use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class User
@@ -67,5 +68,10 @@ class User extends Model
         'password' => 'required'
     ];
 
+
+    public function role()
+    {
+        return $this->belongsTo('App\Models\Role');
+    }
     
 }
