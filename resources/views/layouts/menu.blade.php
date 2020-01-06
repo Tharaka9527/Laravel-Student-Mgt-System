@@ -1,4 +1,4 @@
-@if(Auth::user() -> role < 2)
+
 <li class="treeview">
     <a href="#">
         <i class="fa fa-dashboard"></i><span>General</span>
@@ -75,7 +75,7 @@
 
     </ul>
 </li>
-@endif
+
 
     <li class="{{ Request::is('admissions*') ? 'active' : '' }}">
         <a href="{{ route('admissions.index') }}"><i class="fa fa-user"></i><span>Admissions</span></a>
@@ -89,7 +89,6 @@
         <a href="{{ route('users.index') }}"><i class="fa fa-user"></i><span>Users</span></a>
     </li>
 
-    @if (Auth::user() -> role < 2)
     <li class="{{ Request::is('attendances*') ? 'active' : '' }}">
         <a href="{{ route('attendances.index') }}"><i class="fa fa-calendar"></i><span>Attendances</span></a>
     </li> 
@@ -101,7 +100,7 @@
     <li class="{{ Request::is('transactions*') ? 'active' : '' }}">
         <a href="{{ route('transactions.index') }}"><i class="fa fa-money"></i><span>Transactions</span></a>
     </li>
-    @endif
+
     
 
 
